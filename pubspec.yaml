@@ -1,16 +1,5 @@
-name: flutter_catalog
+name: kidspend3
 description: A new Flutter project.
-
-# The following defines the version and build number for your application.
-# A version number is three numbers separated by dots, like 1.2.43
-# followed by an optional build number separated by a +.
-# Both the version and the builder number may be overridden in flutter
-# build by specifying --build-name and --build-number, respectively.
-# Read more about versioning at semver.org.
-version: 1.0.0+1
-
-environment:
-  sdk: ">=2.0.0-dev.68.0 <3.0.0"
 
 dependencies:
   flutter:
@@ -19,6 +8,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
+  sticky_headers:
 
 dev_dependencies:
   flutter_test:
@@ -30,6 +20,26 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
+  assets:
+    - assets/alogo_claire_white.png
+    - assets/alogo_nina_white.png
+    - assets/alogo_rachel_white.png
+    - assets/simpsons_homer_donut.png
+    - assets/simpsons_snowball_v.png
+    - assets/simpsons_hellfish.png
+    - assets/dark_grunge_bk.jpg
+    - assets/wood_bk.jpg
+    - assets/donut-bk.png
+    - assets/hellfish-bk.png
+    - assets/snowball-bk.png
+
+  fonts:
+     - family: mermaid
+       fonts:
+         - asset: assets/Mermaid1001.ttf
+     - family: bebas-neue
+       fonts:
+         - asset: assets/BebasNeue-Regular.ttf
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
