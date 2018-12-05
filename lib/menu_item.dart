@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:kidspend3/zoom_scaffold.dart';
+import 'package:flutter_catalog/zoom_scaffold.dart';
 
 // Now lets wrap each list item in an animator
 // Change 'extends StatefulWidget' to ImplicitlyAnimatedWidget and

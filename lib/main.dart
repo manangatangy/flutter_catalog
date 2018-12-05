@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:kidspend3/menu.dart';
-import 'package:kidspend3/menu_screen.dart';
-import 'package:kidspend3/zoom_scaffold.dart';
+import 'package:flutter_catalog/menu.dart';
+import 'package:flutter_catalog/menu_screen.dart';
+import 'package:flutter_catalog/zoom_scaffold.dart';
 
 void main() => runApp(MyApp());
 //void main() => runApp(ListDemoApp());

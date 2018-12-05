@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:kidspend3/zoom_scaffold.dart';
+import 'package:flutter_catalog/zoom_scaffold.dart';
 
 class MenuItem {
   final String id;

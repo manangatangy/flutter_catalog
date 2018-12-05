@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:kidspend3/menu.dart';
-import 'package:kidspend3/menu_title.dart';
-import 'package:kidspend3/menu_item.dart';
-import 'package:kidspend3/zoom_scaffold.dart';
+import 'package:flutter_catalog/menu.dart';
+import 'package:flutter_catalog/menu_title.dart';
+import 'package:flutter_catalog/menu_item.dart';
+import 'package:flutter_catalog/zoom_scaffold.dart';
 
 final menuScreenKey = GlobalKey(debugLabel: 'MenuScreen');
 
