@@ -1,20 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_catalog/zoom_scaffold.dart';
-
-class MenuItem {
-  final String id;
-  final String title;
-  final ImageProvider imageProvider;
-  final Screen contentScreen;
-
-  MenuItem({
-    this.id,
-    this.title,
-    this.imageProvider,
-    this.contentScreen,
-  });
-}
+import 'package:flutter_catalog/zoom_menu/menu_item.dart';
+import 'package:flutter_catalog/zoom_menu/zoom_scaffold.dart';
 
 final image1 = AssetImage("assets/simpsons_hellfish.png");
 final image1Bk = AssetImage('assets/hellfish-bk.png');

@@ -2,7 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_catalog/zoom_scaffold.dart';
+import 'package:flutter_catalog/zoom_menu/zoom_scaffold.dart';
 
 class AnimatedMenuTitle extends ImplicitlyAnimatedWidget {
   final MenuState menuState;

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_catalog/zoom_scaffold.dart';
+import 'package:flutter_catalog/zoom_menu/zoom_scaffold.dart';
 
 // Now lets wrap each list item in an animator
 // Change 'extends StatefulWidget' to ImplicitlyAnimatedWidget and
@@ -9,6 +9,20 @@ import 'package:flutter_catalog/zoom_scaffold.dart';
 // 'something about me can be animated', ie some value can change.
 // So we bring in the properties we're going to need.  This widget will
 // wrap a menuListItem
+
+class MenuItem {
+  final String id;
+  final String title;
+  final ImageProvider imageProvider;
+  final Screen contentScreen;
+
+  MenuItem({
+    this.id,
+    this.title,
+    this.imageProvider,
+    this.contentScreen,
+  });
+}
 
 class AnimatedMenuListItem extends ImplicitlyAnimatedWidget {
   final Widget menuListItem;
