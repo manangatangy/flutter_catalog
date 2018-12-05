@@ -15,7 +15,7 @@ class _ArtistDetailsAnimator extends State<ArtistsDetailsAnimator>
   void initState() {
     super.initState();
     _controller = new AnimationController(
-      duration: const Duration(milliseconds: 2200),
+      duration: const Duration(milliseconds: 5200),
       vsync: this,
     );
     _controller.forward();
