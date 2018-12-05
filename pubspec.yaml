@@ -1,4 +1,4 @@
-name: kidspend3
+name: flutter_catalog
 description: A new Flutter project.
 
 dependencies:
@@ -21,6 +21,10 @@ dev_dependencies:
 # The following section is specific to Flutter.
 flutter:
   assets:
+  # image assets are referred to in Dart using the names listed here.
+  # Note that the actual image files may reside in subdirs under assets
+  #
+  # zoom_menu
     - assets/alogo_claire_white.png
     - assets/alogo_nina_white.png
     - assets/alogo_rachel_white.png
@@ -32,14 +36,23 @@ flutter:
     - assets/donut-bk.png
     - assets/hellfish-bk.png
     - assets/snowball-bk.png
+    # blurry_artist
+    - assets/avatar.png
+    - assets/backdrop.png
+    - assets/video1_thumb.png
+    - assets/video2_thumb.png
+    - assets/video3_thumb.png
+    - assets/video4_thumb.png
 
   fonts:
+  # font assets are referred to in Dart using the family names shown here.
+  # Note that the actual font files must reside in the path specified here
      - family: mermaid
        fonts:
-         - asset: assets/Mermaid1001.ttf
+         - asset: assets/zoom_menu/Mermaid1001.ttf
      - family: bebas-neue
        fonts:
-         - asset: assets/BebasNeue-Regular.ttf
+         - asset: assets/zoom_menu/BebasNeue-Regular.ttf
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
