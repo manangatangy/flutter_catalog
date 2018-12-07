@@ -1,9 +1,27 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_catalog/animated_map/animated_map.dart';
 import 'package:flutter_catalog/blurry_artist/blurry_artist.dart';
 import 'package:flutter_catalog/google_maps/maps_main.dart';
 import 'package:flutter_catalog/google_maps/simple_map.dart';
 import 'package:flutter_catalog/zoom_menu/zoom_app.dart';
+
+// todo: floating app bar
+// https://flutterdoc.com/animating-app-bars-in-flutter-cf034cd6c68b
+// todo: firebase
+// https://flutterdoc.com/loading-data-from-firestore-with-flutter-c42c520f6ee5
+// todo: implement location permissions for maps
+// https://pub.dartlang.org/packages/permission
+// todo:
+//
+// todo:
+//
+// todo:
+//
+// todo:
+//
+// todo:
+//
 
 void main() {
   runApp(MaterialApp(
@@ -31,6 +49,7 @@ final catalogEntries = [
   CatalogEntry('/BlurryArtistApp', (BuildContext context) => BlurryArtistApp()),
   CatalogEntry('/SimpleMapApp', (BuildContext context) => SimpleMapApp()),
   CatalogEntry('/MapsBigDemo', (BuildContext context) => MapsBigDemo()),
+  CatalogEntry('/FullscreenMapApp', (BuildContext context) => FullscreenMapApp()),
 ];
 
 class AppHome extends StatelessWidget {
