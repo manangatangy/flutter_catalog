@@ -9,6 +9,10 @@ import 'scrolling_map.dart';
 // Ref: https://github.com/flutter/plugins/tree/master/packages/google_maps_flutter/example
 // Follow https://github.com/flutter/plugins/tree/master/packages/google_maps_flutter
 // and get an api key !!!
+// Console at https://console.cloud.google.com/apis/dashboard
+// https://console.cloud.google.com/apis/dashboard?folder&project=api-9111391984561677101-76037&organizationId&duration=P4D
+// This is where I can see the credentials;
+// https://console.cloud.google.com/google/maps-apis/apis/maps-android-backend.googleapis.com/credentials?project=api-9111391984561677101-76037&duration=P4D
 
 final List<Page> _allPages = <Page>[
   MapUiPage(),

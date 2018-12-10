@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_catalog/animated_map/animated_map.dart';
+import 'package:flutter_catalog/bandvote/bandvote.dart';
 import 'package:flutter_catalog/blurry_artist/blurry_artist.dart';
 import 'package:flutter_catalog/google_maps/maps_main.dart';
 import 'package:flutter_catalog/google_maps/simple_map.dart';
@@ -50,6 +51,7 @@ final catalogEntries = [
   CatalogEntry('/SimpleMapApp', (BuildContext context) => SimpleMapApp()),
   CatalogEntry('/MapsBigDemo', (BuildContext context) => MapsBigDemo()),
   CatalogEntry('/FullscreenMapApp', (BuildContext context) => FullscreenMapApp()),
+  CatalogEntry('/BandvoteApp', (BuildContext context) => BandvoteApp()),
 ];
 
 class AppHome extends StatelessWidget {

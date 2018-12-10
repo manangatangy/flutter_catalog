@@ -44,6 +44,11 @@ class _FullscreenMapAppState extends State<FullscreenMapApp> {
     super.dispose();
   }
 
+  @override
+  Widget build(BuildContext context) {
+    return buildStaticContent(context);
+  }
+
   void _select(MapTypes types) {
     // Causes the app to rebuild with the new _selectedChoice.
     setState(() {
@@ -76,12 +81,6 @@ class _FullscreenMapAppState extends State<FullscreenMapApp> {
     _options = mapController.options;
     _position = mapController.cameraPosition;
     _isMoving = mapController.isCameraMoving;
-  }
-
-
-  @override
-  Widget build(BuildContext context) {
-    return buildStaticContent(context);
   }
 
   Widget buildStaticContent(BuildContext context) {
