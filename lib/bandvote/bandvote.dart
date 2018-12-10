@@ -1,6 +1,3 @@
-
-
-
 // ref: https://console.cloud.google.com/firestore/welcome?project=api-9111391984561677101-76037
 // https://www.youtube.com/watch?v=DqJ_KjFzL9I
 // Actually https://console.firebase.google.com/u/0/?pli=1 is a better interface
@@ -11,6 +8,7 @@
 // at https://developers.google.com/android/guides/client-auth
 // This is where I generated flutter_catalog/android/app/google-services.json
 
+// https://firebase.google.com/docs/flutter/setup
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
