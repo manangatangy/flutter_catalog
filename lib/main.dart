@@ -5,6 +5,8 @@ import 'package:flutter_catalog/bandvote/bandvote.dart';
 import 'package:flutter_catalog/blurry_artist/blurry_artist.dart';
 import 'package:flutter_catalog/google_maps/maps_main.dart';
 import 'package:flutter_catalog/google_maps/simple_map.dart';
+import 'package:flutter_catalog/page_transformer/main_page_transformer.dart';
+import 'package:flutter_catalog/scrolling/scroll_demo.dart';
 import 'package:flutter_catalog/zoom_menu/zoom_app.dart';
 
 // todo: floating app bar
@@ -52,6 +54,8 @@ final catalogEntries = [
   CatalogEntry('/MapsBigDemo', (BuildContext context) => MapsBigDemo()),
   CatalogEntry('/FullscreenMapApp', (BuildContext context) => FullscreenMapApp()),
   CatalogEntry('/BandvoteApp', (BuildContext context) => BandvoteApp()),
+  CatalogEntry('/ScrollDemoPage', (BuildContext context) => ScrollDemoPage()),
+  CatalogEntry('/PageTransformerDemoApp', (BuildContext context) => PageTransformerDemoApp()),
 ];
 
 class AppHome extends StatelessWidget {

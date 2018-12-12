@@ -47,6 +47,10 @@ flutter:
     - assets/video2_thumb.png
     - assets/video3_thumb.png
     - assets/video4_thumb.png
+    # page_transformer
+    - assets/1.png
+    - assets/2.png
+    - assets/3.png
 
   fonts:
   # font assets are referred to in Dart using the family names shown here.
