@@ -142,8 +142,15 @@ class _PageTransformerState extends State<PageTransformer> {
           Positioned(
             bottom: 40.0,
             child: DotsIndicator(
-              controller: controller,
-              itemCount: widget.itemCount,
+                controller: controller,
+                itemCount: widget.itemCount,
+                onDotSelected: (int page) {
+                  controller.animateToPage(
+                    page,
+                    duration: Duration(milliseconds: 500),
+                    curve: Curves.easeOut,
+                  );
+                }
             ),
           ),
         ],

@@ -9,7 +9,7 @@ import 'package:flutter/material.dart';
 class DotsIndicator extends AnimatedWidget {
   /// Creates a dots indicator. Provide the same [PageController] and
   /// itemCount that are used for the [PageView].  Optional callback
-  /// for clicking a dot, defaults to animating to the selected dot.
+  /// for clicking a dot.
   DotsIndicator({
     this.controller,
     this.itemCount,
@@ -58,17 +58,7 @@ class DotsIndicator extends AnimatedWidget {
             width: DotsIndicator._kDotSize * zoom,
             height: DotsIndicator._kDotSize * zoom,
             child: new InkWell(
-              onTap: () {
-                if (onDotSelected != null) {
-                  onDotSelected(index);
-                } else {
-                  controller.animateToPage(
-                    index,
-                    duration: Duration(milliseconds: 500),
-                    curve: Curves.easeOut,
-                  );
-                }
-              },
+              onTap: () => onDotSelected(index),
             ),
           ),
         ),
