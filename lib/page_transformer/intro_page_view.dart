@@ -13,7 +13,10 @@ class PageTransformerDemoView extends StatelessWidget {
           child: PageTransformer(
             pageViewBuilder: (context, visibilityResolver) {
               return PageView.builder(
-                controller: PageController(viewportFraction: 0.85),
+                controller: PageController(
+                  viewportFraction: 0.85,
+                  initialPage: 2,
+                ),
                 itemCount: sampleItems.length,
                 itemBuilder: (context, index) {
                   final item = sampleItems[index];

@@ -48,6 +48,15 @@ class PageVisibilityResolver {
     final double pagePosition = (pageX - scrollX) / pageViewWidth;
     final double safePagePosition = !pagePosition.isNaN ? pagePosition : 0.0;
 
+    if (_viewPortFraction == null) {
+      // The first time the PageVisibilityResolver is used, and before
+      // there has been a ScrollNotification to the _PageTransformerState
+      // then the above calcs would return a value equal to index.
+      // This will only be the correct return value, when initialPage=0.
+      // Therefore, force correct return value, regardless of initialPage value.
+      return 0.0;
+    }
+
     if (safePagePosition > 1.0) {
       return 1.0;
     } else if (safePagePosition < -1.0) {
