@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_catalog/page_transformer/dots_indicator.dart';
 import 'package:meta/meta.dart';
 
 /// A function that builds a [PageView] lazily.
@@ -104,9 +105,11 @@ class PageVisibility {
 class PageTransformer extends StatefulWidget {
   PageTransformer({
     @required this.pageViewBuilder,
+    @required this.itemCount,
   });
 
   final PageViewBuilder pageViewBuilder;
+  final int itemCount;
 
   @override
   _PageTransformerState createState() => _PageTransformerState();
@@ -132,7 +135,19 @@ class _PageTransformerState extends State<PageTransformer> {
           );
         });
       },
-      child: pageView,
+      child: Stack(
+        alignment: Alignment.center,
+        children: <Widget>[
+          pageView,
+          Positioned(
+            bottom: 40.0,
+            child: DotsIndicator(
+              controller: controller,
+              itemCount: widget.itemCount,
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

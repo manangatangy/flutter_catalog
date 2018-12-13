@@ -30,6 +30,7 @@ class PageTransformerDemoView extends StatelessWidget {
                 },
               );
             },
+            itemCount: sampleItems.length,
           ),
         ),
       ),
